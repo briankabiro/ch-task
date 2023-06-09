@@ -21,7 +21,7 @@ Acceptance Criteria
 Time Estimate
 Implementation Details
 
-1. ##### Task: Create new column on Agents table in the database
+1. ### Task: Create new column on Agents table in the database
 **Acceptance Criteria**
 Agents table has a new column called custom_id that:
   - is unique to a facility
@@ -43,7 +43,7 @@ Add tests to validate:
 Time Estimate: **1 day**
 
 
-2. ##### Task: Update the API endpoint for editing an agent to allow a facility to update the new ID
+2. ### Task: Update the API endpoint for editing an agent to allow a facility to update the new ID
 ###### Implementation details
 - Include the new field in the params that the API endpoint accepts. Maybe the API uses a filter/array to decide which parameters it accepts
 
@@ -52,7 +52,7 @@ Add tests to validate:
 
 **Time estimate**: 1 hour
 
-3. ##### Task: Update the `getShiftByFacility` method to include the new id in the Agent metadata
+3. ### Task: Update the `getShiftByFacility` method to include the new id in the Agent metadata
 Implementation:
 - Fetch the `custom_id` from Agents table and include it in the metadata
 - Update the `getShiftByFacility` tests to validate the custom id is included in the metadata
@@ -62,7 +62,7 @@ Acceptance Criteria:
 
 Time Estimate: **1 day**
 
-4. ##### Task: Replace the database id with the custom ID in the `generateReport` function
+4. ### Task: Replace the database id with the custom ID in the `generateReport` function
 ###### Implementation details
 - Update the `generateReport` function to use the new ID
 - Update the `generateReport` function tests to check that the custom id is being used and not the database id
