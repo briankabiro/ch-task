@@ -17,12 +17,9 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 ## Your Breakdown Here
 
-Acceptance Criteria
-Time Estimate
-Implementation Details
-
 1. ### Task: Create new column on Agents table in the database
 **Acceptance Criteria**
+
 Agents table has a new column called custom_id that:
   - is unique to a facility
   - cannot be null
@@ -40,7 +37,7 @@ Add tests to validate:
 - a facility cannot have agents with the same custom id
 - the custom id cannot be null
 
-Time Estimate: **1 day**
+Time Estimate: **half a day**
 
 
 2. ### Task: Update the API endpoint for editing an agent to allow a facility to update the new ID
@@ -49,6 +46,8 @@ Time Estimate: **1 day**
 
 Add tests to validate:
 - the custom_id can be updated through the update agents endpoint
+
+**Acceptance Criteria**: Users can update an agent's custom id using the API/frontend client
 
 **Time estimate**: 1 hour
 
@@ -60,7 +59,7 @@ Implementation:
 Acceptance Criteria: 
 - Calling the getShiftByFacility method returns the new `custom_id`
 
-Time Estimate: **1 day**
+Time Estimate: **half a day**
 
 4. ### Task: Replace the database id with the custom ID in the `generateReport` function
 ###### Implementation details
